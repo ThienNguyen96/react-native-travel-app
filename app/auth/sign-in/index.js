@@ -29,13 +29,16 @@ export default function SignIn() {
     .then((userCredential) => {
       // Signed in 
       const user = userCredential.user;
+      router.replace('/mytrip');
       console.log(user);
     })
     .catch((error) => {
       const errorCode = error.code;
       const errorMessage = error.message;
       console.log(errorMessage, errorCode);
-      ToastAndroid.show(errorMessage, ToastAndroid.BOTTOM);
+      if (errorCode == 'auth/invalid-credential') {
+        ToastAndroid.show('Invalid credentials', ToastAndroid.LONG);
+      }
     });
   }
 
