@@ -25,7 +25,7 @@ export default function Mytrip() {
           fontFamily: 'outfit-bold',
           fontSize: 35
         }}>My Trips</Text>
-        <Ionicons name="add-circle" size={24} color="black" />
+        <Ionicons name="add-circle" size={45} color="black" />
       </View>
 
       {
