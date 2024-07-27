@@ -6,6 +6,7 @@ export const Colors = {
   WHITE: '#fff',
   PRIMARY: '#000',
   GRAY: '#808080',
+  LIGHT_GRAY: '#f2f2f2',
   light: {
     tint: tintColorLight,
     icon: '#687076',
