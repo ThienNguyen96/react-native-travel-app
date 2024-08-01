@@ -11,7 +11,7 @@ export default function OptionCard({option, selectedTraveler}) {
       display:'flex',
       flexDirection: 'row',
       borderRadius: 15
-    }, selectedTraveler==option.title&& {borderWidth:2}]}>
+    }, selectedTraveler?.id==option?.id&& {borderWidth:2}]}>
       <View>
         <Text style={{
           fontSize: 20,

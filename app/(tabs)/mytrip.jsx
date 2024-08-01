@@ -1,12 +1,22 @@
 import { View, Text } from 'react-native'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Colors } from '../../constants/Colors';
 import { Ionicons } from '@expo/vector-icons';
 import StartNewTripCard from '../../components/MyTrips/StartNewTripCard';
+import { useNavigation } from 'expo-router';
 
 export default function Mytrip() {
 
   const [userTrips, setUserTrips] = useState([]);
+
+  // const navigation = useNavigation();
+
+  // useEffect(() => {
+  //   navigation.setOptions({
+  //       headerShown: false,
+  //       headerTransparent: true
+  //     })
+  // }, [])
 
   return (
     <View style={{
