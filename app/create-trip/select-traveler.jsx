@@ -65,7 +65,7 @@ export default function SelectTraveler() {
               <OptionCard 
                 option={item}
                 key={index}
-                selectedTraveler={selectedTraveler}
+                selectedOption={selectedTraveler}
               /> 
             </TouchableOpacity>
           )}
